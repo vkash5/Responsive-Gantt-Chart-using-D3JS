@@ -1,0 +1,39 @@
+[
+    {
+        "task": "This is a very big task name. You can hover over it to see complete task name in desktop",
+        "startTime": "2017-02-09 8:00am",
+        "endTime": "2017-02-09 11:00am"
+    }
+     , {
+        "task": "Badge Pick-up",
+        "startTime": "2017-02-09 8:00am",
+        "endTime": "2017-02-09 7:00pm"
+    },
+
+    {
+        "task": "Sessions",
+        "startTime": "2017-02-09 9:00am",
+        "endTime": "2017-02-09 8:00pm"
+    },
+    {
+        "task": "Lunch",
+        "startTime": "2017-02-09 11:30am",
+        "endTime": "2017-02-09 1:30pm"
+    },
+    {
+        "task": "Codelabs",
+        "startTime": "2017-02-09 8:30am",
+        "endTime": "2017-02-09 8:00pm"
+    },
+    {
+        "task": "Sandbox",
+        "startTime": "2017-02-09 8:30am",
+        "endTime": "2017-02-09 8:00pm"
+    },
+    {
+        "task": "After Hours",
+        "startTime": "2017-02-09 6:00pm",
+        "endTime": "2017-02-09 10:00pm"
+    }
+
+]

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    font-family: sans-serif;
+    position: relative;
+}
+
+svg {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#container {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    overflow: visible;
+}
+
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.3;
+    shape-rendering: crispEdges;
+}
+
+.grid text {
+    stroke: none;
+    font-size: 10;
+}
+
+text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    font: 12px Roboto;
+    border: 0px;
+    border-radius: 8px;
+    height: 15px;
+    background-color: silver;
+    pointer-events: none;
+}
+
+.tooltip:after {
+    font-size: 12px;
+    top: 86%;
+    left: 3%;
+    opacity: 0.9;
+    color: silver;
+    content: "\25BC";
+    position: absolute;
+}
+
+@media only screen and ( max-width: 760px) {
+    .tick:nth-child(even) text {
+        display: none;
+    }
+}
