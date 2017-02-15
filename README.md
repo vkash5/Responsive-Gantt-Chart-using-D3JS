@@ -10,6 +10,7 @@ In addition to above features d3 also simplifies application of
 •	transitions 
 •	color scales 
 •	axis function which handles rendering of x-axis values in required format.
+
 Proof of concept:
 	Set the width of the main canvas on window resize to make grid responsive.
 
