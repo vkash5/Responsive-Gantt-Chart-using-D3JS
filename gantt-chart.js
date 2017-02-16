@@ -23,6 +23,7 @@ function init(taskArray, randomColor, color) {
     }
     var textWrapFlag = 1;
     var mobileLabelRectWidth = [];
+    var tooltipYposn = [];
     var width = window.innerWidth;
     width *= 0.9;
     width -= 90;
@@ -165,7 +166,7 @@ function init(taskArray, randomColor, color) {
                         .duration(200)
                         .style("opacity", 0.9)
                         .style("left", (sidePadding - 80) + "px")
-                        .style("top", (topPadding - 28 + i * 34) + "px");
+                        .style("top", tooltipYposn[i] - 45 + "px");
 
                     tooltipDiv.html(d.task);
                 }
@@ -297,6 +298,7 @@ function init(taskArray, randomColor, color) {
 
             d3.selectAll(".vert-labels")
                 .attr("y", function (d, i) {
+                    tooltipYposn.push(i * gapOffsetDesktop + topPadding + barHeight / 1.5);
                     return i * gapOffsetDesktop + topPadding + barHeight / 1.5;
                 })
                 .attr("display", "block");
