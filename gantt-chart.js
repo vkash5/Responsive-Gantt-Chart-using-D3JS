@@ -53,7 +53,7 @@ function init(taskArray, randomColor, color) {
         .range([0, width]);
 
     var title = svg.append("text")
-        .text("Event Management of Sapient")
+        .text("Task Scheduler")
         .attr("x", window.innerWidth / 2.25)
         .attr("y", 25)
         .attr("text-anchor", "middle")
@@ -295,8 +295,9 @@ function init(taskArray, randomColor, color) {
 
             d3.selectAll(".vert-labels")
                 .attr("y", function (d, i) {
-                    tooltipYposn.push(i * gapOffsetDesktop + topPadding + barHeight / 1.5);
-                    return i * gapOffsetDesktop + topPadding + barHeight / 1.5;
+                    var labelYposn = i * gapOffsetDesktop + topPadding + barHeight / 1.5
+                    tooltipYposn.push(labelYposn);
+                    return labelYposn;
                 })
                 .attr("display", "block");
 
