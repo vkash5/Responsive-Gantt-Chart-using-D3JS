@@ -152,9 +152,6 @@ function init(taskArray, randomColor, color) {
             })
             .each(wrap)
             .attr("x", 0)
-            .attr("y", function (d, i) {
-                return i * gap + topPadding + barHeight / 1.5;
-            })
             .attr("font-size", 14)
             .attr("class", "vert-labels")
             .attr("text-anchor", "start")
